@@ -1,53 +1,360 @@
-\chapter{Aufgabenstellung}
+\chapter{Aufgabe}
 \section{Aufgabenanalyse}
-\subsection{Restriktionen und Annahmen}
-Aus der Aufgabenstellung werden mehrere Bedingungen ersichtlich, welche von der Software beachtet werden müssen.
-\subsection{Formate}
-\subsubsection{Die Eingabedatei}
-Die Eingabedatei setzt sich aus mehreren Kommentaren und Informationen zusammen. Ein Kommentar wird hier durch ein \# eingeleitet. Die Kommentare sind für die Simulation des Programms nicht von Belang, sie finden nur teilweise in der Ausgabe Verwendung als Information. Die übrigen Zeilen beinhalten die relevanten Eingabeinformationen für die Weiterverarbeitung. Der Aufbau der Datei gestaltet sich wie folgt:
-\begin{itemize}
-	\item 
-	\item 
-\end{itemize}
-\subsubsection{Die Ausgabedatei}
-\subsection{Mögliche Probleme}
-Mögliche Ursachen, die die Verarbeitung der Datei verhindern, oder zu einem falschen Ergebnis führen:
-\begin{itemize}
-	\item 
-\end{itemize}
 
-\chapter{Verbale Verfahrensbeschreibung}
-\section{Klasse Main}
-Die Klasse Main kümmert sich um den Ablauf des Programms.
-\section{Klasse Einlesen}
-\section{Klasse Ausgabe}
-Die Klasse ermöglicht das Erstellen des Ausgabedatei nach Vorgabe der Prüfung.
-\section{Ablauf}
+Die Aufgabe besteht darin, eine schemenhafte Landkarte mit vorgegebenen Staaten auf Basis eines vorgegebenen Kennwerts zu erstellen. Dabei wird die reale Lage der Staaten als Ausgangspunkt betrachtet. So ist es möglich, die verschiedenen Länder Europas als Kreise darzustellen. Für einen derart dargestellten Staat, gibt es einen Mittelpunkt, welchem eine x- und y-Koordinate zugeordnet ist, einen Radius sowie eine Liste mit Nachbarstaaten. Die Qualität einer Karte lässt sich durch den Vergleich der Nachbarschaften sowie den Lagebeziehungen aus der Ausgangsdarstellung bestimmen. Die Lagebeziehungen der Staaten sollen erhalten bleiben. In der Landkarte sollte also z.B. wieder erkennbar sein, dass Frankreich südwestlich von Deutschland liegt. Bei der Erstellung einer Landkarte ist zu beachten, dass die resultierenden Kreise sich überschneiden können.\\
 
-\chapter{Problemfälle}
-\section{Eingabefehler}
-Eingabefehler können in diversen Variationen auftreten. Sobald die Vorgaben für den Aufbau des Eingabedokumentes nicht eingehalten werden, wird das Programm mit einem Fehler abgebrochen.
-\section{Laufzeit}
+Die Aufgabe besteht nun darin, einen Algorithmus zu implementieren, welcher unter Berücksichtigung des jeweiligen Kennwerts die der Fläche des Kreises entspricht, den neuen Mittelpunkt eines Kreises berechnet, sodass die Flächen nicht überlappen. Dabei müssen zunächst die Abstoß- und Anziehungskräfte zwischen den Kreisen passend berechnet werden.\\
+Dieser Algorithmus erhält als Übergabe eine Datei, welche aus folgenden Daten besteht:
 
-\chapter{Abweichungen zum Konzept}
-Im Rahmen der ersten Bearbeitung der Aufgabenstellung musste ein Konzept erstellt werden, welches die Programmstruktur und einen möglichen Ablauf beinhalten sollte. Bei der näheren Bearbeitung der Aufgabe ist jedoch aufgefallen, dass die Konzeption teilweise nicht vollständig war und einige Elemente nicht benötigt wurden. Aus dem Vergleich von Konzeption und Endprodukt ergeben sich folgende Änderungen:
 \begin{itemize}
-	\item 
-	\item 
+	
+	\item Die erste Zeile beinhaltet den Namen des Kennwerts
+	\item Die zweite Zeile ist eine Kommentarzeile, beginnend mit dem Symbol \#
+	\item Es folgt die zeilenweise Auflistung der Staaten mit den folgenden Werten:
+		\subitem Autokennzeichen
+		\subitem Kennwort
+		\subitem Geographische Länge und Breite
+	\item Folgende Zeile ist erneut eine Kommentarzeile, beginnend mit dem Symbol \#
+	\item Abschließend folgt die zeilenweise Auflistung der Nachbarstaaten eines Staates. Die Auflistung ist bidirektional. 
+	
 \end{itemize}
 
-\chapter{Programmkonzeption}
+Diese Datei wird eingelesen und gespeichert. Die hieraus resultierende Ausgabe soll ebenfalls in eine Datei geschrieben und gespeichert werden. Mit den Daten aus der Eingabedatei wird der Algorithmus berechnet. Eine weitere Aufgabe des zu implementierenden Algorithmus ist es beispielsweise die Maxima und Minima der x-, sowie der y-Werte im Darstellungsbereich zu berechnen, damit eine plottbare Ausgabe erzeugt werden kann, oder die Anzahl der nötigen Iterationsschritte mit auszugeben. Außerdem muss eine eindeutige, fortlaufende ID zur Nummerierung der Staaten hinzugefügt werden.
+
+
+\section{Entwurf des Algorithmus}
+Zunächst wird die Datei eingelesen und Zeile für Zeile interpretiert. Die erste Zeile wird als Kennwertname gespeichert und muss bei der Ausgabedatei mit ausgegeben werden. Die Kommentarzeile wird ignoriert. Für die folgenden Zeilen wird jeweils ein Objekt vom Typ Staat erzeugt und eine Liste die alle Staaten enthält. Die Zeilen ab der 2. Kommentarzeile werden in eine Liste mit Strings für jeweils jeden Staat gespeichert, da diese die Nachbarstaaten sind. Anschließend muss überprüft werden, ob die eingelesene Zeile valide ist und alle Informationen beinhaltet. Im Fehlerfall soll das Programm eine genaue und aussagekräftige Fehlermeldung ausgeben.\\
+In der Klasse Algorithmus wird ein Objekt vom Typ Einlesen eingelesen und darauf werden die programmierten Methoden angewendet. Für den Algorithmus muss man zu erst die Staaten finden, mit denen unser Ausgangsstaat eine Überlappung hat und auf diese Staaten wird die Funktion aufgerufen, um die Abstoßkräfte zu berechnen. Dies müssen nicht unbedingt Nachbarstaaten sein. Bei den Anziehungskräften muss dann die Kraft von unserem Staat mit allen Nachbarstaaten berechnet werden. Nachdem man die Kräfte bestimmt hat, kann man diese auf den Staat anwenden und somit den neuen Mittelpunkt berechnen. Die Daten, die für die Ausgabe notwendig sind werden in der Klasse Ausgabe gespeichert und dann wird die Ausgabe zusammengefügt mittels eines StringBuilder und die Datei geschrieben.
+
+\chapter{Änderungen zum ursprünglichen Konzept}
+Im Rahmen der ersten Bearbeitung der Aufgabenstellung musste ein Konzept erstellt werden, welches die Programmstruktur und einen möglichen Ablauf beinhaltete. Bei näherer Betrachtung der Aufgabe ist jedoch aufgefallen, dass das erarbeitete Konzept teilweise nicht vollständig ist und einige Element nicht benötigt werden. Aus einem direkten Vergleich zwischen Konzept und Endprodukt ergeben sich folgenden Unterschiede:
+
+\begin{itemize}
+	
+	\item Klasse Staat: Der Anfangspunkt wird als Punkt gespeichert.
+	\item Das Attribut Radius ist entfernt. Hinzugekommen ist die Methode getRadius(), welche den Radius über den Ausdruck $ \sqrt{Kennwert / \pi}  $ berechnet und mit dem Skalierungsfaktor 0.2 skaliert. Mit dieser Skalierung von 0.2 werden alle Staaten am Anfang weit genug auseinander geschoben.Somit werden die Überschneidungen oder Distanzen der Staaten zu verringern und schneller bessere Ergebnisse zu erzielen. 
+	\item Das Attribut vom Typ Punkt für den Mittelpunkt ist hinzugekommen.
+	\item Getter sind implementiert. 
+	
+	\item Klasse Einlesen: Liste mit Staaten, wo alle Staaten gespeichert werden, hinzugefügt 
+	\item Implementation der Methode getStaatWhere(), welche für ein übergebenes Autokennzeichen (String) das dazugehörige Staat-Objekt zurückgibt
+	
+	\item Klasse Algorithmus: Der Rückgabetyp der Methode berechneKraft(), ist von double auf ein Array aus Punkten abgeändert, da Kräfte vektoriell zu betrachten sind und dies ein einfacher double-Wert nicht abbilden kann.
+	
+	\item Methoden, welche für die Berechnung der minimalen Werte im Darstellungsbereich gedacht waren, sind durch die Methode setRange() ersetzt. Hierfür sind vier neue double Attribute notwendig, welche die maximalen und minimalen Werte der x- und y-Koordinaten speichern.
+	
+	\item Die Methode wendeKraft() ersetzt die alte Methoden berechneMittelpunktX() und berechneMittelpunkt(), welche ursprünglich für die Berechnung der neuen x- und y-Werte gedacht waren. Diese Methode wendet auf einen Staat alle gefundenen Werte an und berechnet anhand dessen den neuen Mittelpunkt
+	
+	\item Neue Methode hinzugefügt. Diese ruft die wendeKraft() Methode, anhand der Übergabe von gewünschten Iterationsschritten, iterativ auf.
+	
+\end{itemize}
+
+\chapter{Klassen und Methoden}
 \section{Klassendiagramm}
+\includegraphics[width=\textwidth]{klassendiagramm}
+\captionof{figure}{Klassendiagramm}
+\newpage
 \section{Sequenzdiagramm}
 
-\chapter{Tests}
-\section{IHK Beispiele}
-\section{Eigenständige Tests}
-\section{Fehlerfälle}
+\includegraphics[width=\textwidth]{sequence}
+\captionof{figure}{Sequenzdiagramm}
+
+\newpage
+\section{Klasse Main}
+
+Diese Klasse dient als Grundklasse des gesamten Programmes. In dieser ist lediglich die Main-Methode enthalten, welche immer als erste Methode des gesamten Programmes aufgerufen wird. In dieser Klasse wird für eine Eingabedatei, nach Ausführen des Algorithmus eine Ausgabedatei erstellt, die als Plot dargestellt werden kann.
+
+\section{Klasse Staat}
+
+Jeder Kreis auf der Landkarte, welche zu erstellen ist, ist durch ein Objekt des Typs Staat repräsentiert. Dabei besitzt jedes Objekt die folgenden Attribute:
+\begin{itemize}
+	\item Autokennzeichen
+	\item Kennwert 
+	\item Geografische Breite und Länge als Koordinaten für den Anfangspunkt
+	\item Punkt als Mittelpunkt 
+	\item Liste mit Nachbarstaaten 
+\end{itemize}
+Beim Einlesen der Datei werden dabei die Daten in die Objekte gespeichert. Der hierfür implementierte Algorithmus wird später genauer erklärt.
+
+\section{Klasse Einlesen}
+
+Diese Klasse dient zum Einlesen und Speichern von Daten aus der Eingabedatei. Um die Daten zu speichern, wird eine Liste mit Staaten erzeugt. Der Methode einlesen() wir der Pfad der Datei übergeben und diese liest anschließend mittels eines Scanner die Datei zeilenweise ein. Aufgrund der Aufgabenstellung ist eine Überprüfung der syntaktischen Korrektheit nicht notwendig. Die erste Zeile wird in einem String gespeichert und bei der Ausgabedatei als der Name des Kennwerts ausgegeben. Jedoch werden Zeilen dahingehend überprüft, ob es sich bei der eingelesenen Zeile um eine Kommentarzeile handelt. Falls dies der Fall ist, wird diese Zeile ignoriert. Elemente zwischen der ersten und zweiten Kommentarzeile werden dabei als Objekte vom Typ Staat gespeichert. Der Rest der Datei besteht somit aus Nachbarn eines Staates, welche in das Attribut Nachbarn des jeweiligen Staates gespeichert wird.
+
+\section{Klasse Punkt}
+
+Diese Klasse stellt einen Punkt mit einer x- und y-Koordinate, dar.
+
+\section{Klasse Algorithmus}
+Diese Klasse beinhaltet die Logik, welche für die Berechnung des neuen Mittelpunktes eines Kreises benötigt wird. Es wird ein Objekt vom Typ Einlesen übergeben, welches die eingelesenen Daten beinhaltet und dem Algorithmus zur Berechnung zur Verfügung stellt.\\
+Die Klasse Algorithmus besitzt dabei selbst die folgenden Attribute:
+\begin{itemize}
+	\item Eine Liste von Staaten, welche alle Staaten beinhaltet
+	\item Vier double-Werte, die jeweils den minimalen und maximalen Wert der x- und y-Koordinaten repräsentieren. Diese sind für die spätere Visualisierung der Landkarte nötig
+\end{itemize}
+
+Außerdem besitzt die Klasse Algorithmus folgende Methoden:
+
+\begin{itemize}
+	
+	\item Die Methode berechneKraefte() erhält als Übergabeparameter ein Objekt vom Typ Staat und berechnet hieraus die auf diesen Staat angewendeten Kräfte in Form von x- und y-Koordinaten, welche als Array vom Typ Punkt zurückgegeben werden. Um die Kraft zweier Staaten zu ermitteln, müssen die Randpunkte der Staaten ermittelt werden. Randpunkte errechnen sich, indem der Vektor zwischen beiden Mittelpunkten normiert wird und mit dem Radius multipliziert wird. Die Kraft ergibt sich dann aus dem Vektor der beiden Randpunkte. Zu Beginn der Methode werden zwei double Werte initialisiert, welche als Faktor für Anziehungs- und Abstoßkraft dienen. Über eine for-each-Schleife wird nun über alle Staaten iteriert und die Kräfte mit dem übergebenen Staat berechnet. Zudem wird überprüft, ob sich die resultierenden Kreise zueinander überschneiden. Falls dies der Fall ist, wird die Abstoßkraft berechnet und in die Array gespeichert. Andernfalls wird die Anziehungskraft vom Staat mit allen Nachbarn berechnet. Eine Übersicht über den Ablauf der Methode ist dem beigefügten Struktogramm zu entnehmen.\\
+	
+	\begin{minipage}{\textwidth}
+			\includegraphics[width=\textwidth,height=15cm]{struktogram_berechne_kraefte}
+			\captionof{figure}{Struktogramm für die Methode berechneKraefte()}			
+	\end{minipage}
+	
+	\item Die Methode wendeKraft()
+		\subitem Wendet die Kräfte eines Staates an, um den Mittelpunkt zu verschieben. Der übergebene int-Wert ist die Anzahl der gewünschten Iterationen.
+		\subitem Iteriert über alle Kräfte der Staaten und berechnet über Addition der Kräfte zum Mittelpunkt den neuen Mittelpunkt.
+		\subitem Eine Übersicht über den Ablauf der Methode ist dem beigefügten Struktogramm zu entnehmen.
+	
+	\begin{minipage}{\textwidth}
+		\begin{center}
+			\includegraphics[width=15cm,height=13cm]{struktogram_wende_kraft}
+			\captionof{figure}{Struktogramm für die Methode wendeKraft()}
+		\end{center}	
+	\end{minipage}\\\\
+	
+	\begin{minipage}{\textwidth}
+		\begin{center}
+			\includegraphics[width=5cm,height=3cm]{struktogram_wende_kraft_iter}
+			\captionof{figure}{Struktogramm für die Methode wendeKraft() mit Iterationen}
+		\end{center}
+	\end{minipage}	
+	
+	\item Für die Berechnung von den minimalen und maximalen Werten des Darstellungsbereiches gibt es zwei Methoden, einmal für die x-Werte Berechnung und einmal für die y-Werte.
+	 Es werden alle Staaten durchlaufen und für jeden Staat wird die Differenz von der Mittelpunkt Koordinate mit dem Radius berechnet, und der kleinste Wert davon wird als minimaler Wert von x bzw. y gesetzt. Ebenfalls wird die Summe von der Mittelpunkt Koordinate mit dem Radius berechnet und der größte Wert als maximales x bzw. y gesetzt. 
+
+	\begin{minipage}{\textwidth}
+		\begin{center}
+			\includegraphics[width=16cm,height=13cm]{struktogram_set_xrange}
+			\captionof{figure}{Struktogramm für die Methode setxrange()}
+		\end{center}
+	\end{minipage}
+
+	\begin{minipage}{\textwidth}
+		\begin{center}
+			\includegraphics[width=16cm,height=13cm]{struktogram_set_yrange}
+			\captionof{figure}{Struktogramm für die Methode setyrange()}
+		\end{center}
+	\end{minipage}
+
+	\item An dieser Stelle ist noch der Hinweis aus der Aufgabestellung zu erwähnen, dass x-range gleich y-range sein muss, da es sonst zu Problemen bei der Visualisierung kommt. Hierfür besitzt die Klasse Algorithmus die Methode setRange(), welche die Bedingung xmax-xmin=ymax-ymin überprüft. Der Ablauf der Methode kann in dem folgenden Struktogramm nachvollzogen werden. 
+	
+	\begin{minipage}{\textwidth}
+		\begin{center}
+			\includegraphics[width=12cm,height=8cm]{struktogram_setrange}
+			\captionof{figure}{Struktogramm für die Methode setrange()}
+		\end{center}
+	\end{minipage}
+	
+	\item Der Konstruktor der Klasse Algorithmus ruft lediglich die Methoden setranges() und wendeKraft(anzahl iterationen) auf.
+
+\end{itemize}
+
+\section{Klasse Ausgabe}
+
+Die Daten, die für die Ausgabe notwendig sind werden gespeichert und dann wird die Ausgabe zusammengefügt mittels eines StringBuilder und die Datei geschrieben.
 
 \chapter{Benutzeranleitung}
-\section{Systemvoraussetzungen}
-\section{Benutzeranleitung}
 
+\section{ZIP Datei}
+
+In der abgegebenen zip-Datei befindet sich neben dieser Dokumentation ein anderer Ordner "Programm". In diesem befindet sich ein Unterordner "Javadoc", welcher die Entwicklerdokumentation beinhaltet, sowie einen weiteren Unterordner „GrosseProg“ mit dem Programm. In diesem liegt eine ausführbare .jar Datei und ein Skript für Windows run.bat. Mithilfe dieses Skriptes können alle Beispiele ausgeführt werden.
+In diesem Ordner befindet sich noch ein Unterordner in, wo die Eingabedateien zu finden sind. Die Ergebnisse hieraus sind in dem Ordner „out“ zu finden.\\
+Im Ordner src befindet sich der geschriebene Quellcode.
+
+
+\section{Programmaufruf}
+
+Für das automatische Ausführen von Testfällen muss die beiliegende Batchdatei run.bat ausgeführt werden. Alternativ kann das Programm auch über die Kommandozeile ausgeführt werden. Der hierfür auszuführende Befehl folgt folgendem Muster:\\ 
+
+<Ordner der jar-Datei> grosseprog.jar input <datei>\\
+
+
+Dabei dienen alle Felder mit <> als Platzhalter und müssen entsprechend ersetzt werden. Die Entwicklerdokumentation kann mit Hilfe der index.html aus dem Ordner "Javadoc" geöffnet werden.
+
+\chapter{Entwicklungsumgebung}
+
+\section{Hardware}
+
+Entwickelt und getestet wurde das Programm auf einem Dell Inc. Latitude E5470 mit Intel(R) Core(TM) i5-6300U Prozessor (2.40GHz) mit 8GB Arbeitsspeicher.
+
+\section{Software}
+Das Programm wurde unter dem Betriebssystem Windows 7 Enterprise mit „Eclipse IDE for Java Developers Neon“ in der Version 4.6.3 erstellt. Die verwendete Programmiersprache ist Java, der verwendete Compiler der aus der JavaSDK ”JavaSE-1.8”.\\Diese Dokumentation wurde in LaTeX mittels LuaLaTex geschrieben.\\Zur Erzeugung der Diagramme wurden umlet, structorizer und gnuplot verwendet und die Ergebnissen wurden als Bilddateien in LaTeX eingebunden.
+
+
+\chapter{Testfälle}
+\section{IHK Beispiel 1}
+Das erste Beispiel der IHK wird im Folgenden, exemplarisch für die anderen Testfälle, ausführlich erklärt und diskutiert.\\ 
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=8cm, height=8cm]{eingabedatei_ihk_beispiel_1}
+		\captionof{figure}{Eingabedatei 1}
+	\end{center}
+\end{minipage}\\\\
+Im IHK Beispiel 1 liegen zehn Staaten auf enger Fläche und es gibt hohe Überlappungen zwischen den Staaten. Für jeden Staat werden die Abstoßkräfte mit überlappenden Staaten berechnet, als auch die Anziehungskräfte mit Nachbarstaaten. Diese Kräfte werden auf den Punkt angewendet, welcher in die Eingabedatei eingelesen wurde. Dabei werden die Radien aller Staaten mit dem Faktor 0.2 skaliert und die Landkarte Darstellung sieht so aus wie der Plot von der IHK. Mit dieser Skalierung von 0.2 werden alle Staaten am Anfang weit genug auseinander geschoben. Sollte man die Skalierung der Radien nicht durchführen, würde DK von PL wegdrücken und dadurch an NL abgegrenzt. \\
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=10cm, height=10cm]{ihk_beispiel_1_100_iterationen}
+		\captionof{figure}{Beispiel 1 mit Skalierung = 0.2}
+	\end{center}
+\end{minipage}\\\\
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=10cm, height=10cm]{bsp1_ohneskalierung}
+		\captionof{figure}{Beispiel 1 ohne Skalierung}
+	\end{center}
+\end{minipage}\\\\
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=10cm, height=8cm]{ausgabedatei_ihk_beispiel1}
+		\captionof{figure}{Ausgabedatei Beispiel 1}
+	\end{center}
+\end{minipage}\\\\
+
+
+\section{IHK Beispiel 2} 
+
+In diesem Beispiel soll die Landkarte das Verhältnis von Bierkonsum darstellen. Es sind 10 Staaten vorgegeben. In diesem Beispiel ist es jedoch aufgefallen, dass der Skalierungsfaktor sehr wichtig ist. Mit einem Skalierungsfaktor 0.2 sieht der Ergebnis nicht richtig aus, weil DK direkt neben NL steht. Sollte man 0.02 als Skalierungsfaktor nutzen, kommt man auf den gewünschten Ergebnis.\\
+ 
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=8cm, height=8cm]{eingabedatei_ihk_beispiel_2}
+		\captionof{figure}{Eingabedatei Beispiel 2}
+	\end{center}
+\end{minipage}\\\\
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=8cm, height=8cm]{ihkbeispiel2_falsch}
+		\captionof{figure}{Beispiel 2 Skalierungsfaktor 0.2}
+	\end{center}
+\end{minipage}\\\\
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=8cm, height=8cm]{bsp2_richtig}
+		\captionof{figure}{Beispiel 2 Skalierungsfaktor 0.02}
+	\end{center}
+\end{minipage}
+
+\section{IHK Beispiel 3} 
+
+In diesem Beispiel sind die Staaten Mitteleuropas dargestellt. Anfangs wurden beim Anwenden der Kräfte nach der Berechnung die Kräfte mit dem Faktor 0.5 multipliziert. Bei einer großen Anzahl von Staaten, führt das zu einem falschen Ergebnis, weil es noch große Überlappungen zwischen den Staaten gibt. Dafür wurden die Kräfte mit einem Faktor von 0.01 multipliziert und man kommt auf den gewünschten Ergebnis.
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=8cm, height=18cm]{eingabedatei_ihk_beispiel_3}
+		\captionof{figure}{Eingabe Datei 3}
+	\end{center}
+\end{minipage}\\\\
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=10cm, height=10cm]{ihk_beispiel_3_2000_iterationen}
+		\captionof{figure}{Landkarte Beispiel 3}
+	\end{center}
+\end{minipage}\\\\
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=14cm, height=14cm]{ausgabedatei_ihk_beispiel3}
+		\captionof{figure}{Ausgabedatei Beispiel 3}
+	\end{center}
+\end{minipage}\\\\
+
+\section{Andere Testfälle}
+\subsection{Normalfall mit fünf gleich grosse Staaten}
+
+In diesem Beispiel werden fünf gleich große Staaten betrachtet. Die haben dabei die gleiche Fläche aber unterschiedliche Anfangspunkte. Die Ausgabedatei sieht wie erwartet aus.\\
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=8cm, height=4cm]{eingabe_normalfall3}
+		\captionof{figure}{Eingabedatei}
+	\end{center}
+\end{minipage}\\\\
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=14cm, height=7cm]{gleichgrosse}
+		\captionof{figure}{Landkarte}
+	\end{center}
+\end{minipage}\\\\
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=14cm, height=7cm]{ausgabe_normalfall3}
+		\captionof{figure}{Ausgabedatei}
+	\end{center}
+\end{minipage}\\\\
+
+
+\subsection{Fehlerfall wenn für ein Autokennzeichen kein Staat gefunden werden kann} 
+
+Sollte in der Eingabedatei bei der Auflistung der Nachbarschaften, ein Kennzeichen vorkommen, für die kein Staat gefunden werden kann, führt dies zu einem Fehler.
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=9cm, height=8cm]{bsp_nachbar_kein_staat}
+		\captionof{figure}{Fehlerhafte Eingabedatei}
+	\end{center}
+\end{minipage}\\\\
+
+In dieser Eingabedatei ist zu sehen, dass ein Wert Z in der Nachbarschaft vom Staat mit dem Autokennzeichen NL vorkommt. Da aber für Z kein Staat gefunden werden kann, wird das Programm abgebrochen und an diese Stelle eine Exception werfen. Beim Ausführen der Batch Datei, wird in der Konsole die Fehlermeldung angezeigt und es wird keine Ausgabedatei erzeugt.
+
+\subsection{Fehlerfall mit negativem Kennwert} 
+Sollte in der Eingabedatei ein Kennwert kleiner 0 vorkommen, führt dies zu einem Fehler. Als Kennwert wird die Fläche betrachtet. Wenn der Kennwert negativ ist, ist es logisch unmöglich einen Kreis zu finden, der diese Fläche hat. Daher wird das Programm abgebrochen und eine Exception geworfen.
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=10cm, height=8cm]{bsp_flaeche_neg}
+		\captionof{figure}{Fehlerhafte Eingabedatei}
+	\end{center}
+\end{minipage}\\\\
+
+Wie in diesem Beispiel zu sehen ist, beträgt die Fläche für den ersten Staat einen negativen Wert. Beim Ausführen der Batch Datei, wird in der Konsole die Fehlermeldung angezeigt und es wird keine Ausgabedatei erzeugt. 
+
+\subsection{Fehlerfall wenn der selbe Staat mehrmals vorkommt mit unterschiedliche Mittelpunkten}
+
+
+Es wird überprüft, ob ein Staat mehrmals in der Eingabedatei mit unterschiedlichen Mittelpunkten vorkommt. Sollte das der Fall sein, wird bei der Ausführung der Batch Datei eine Fehlermeldung in der Konsole angezeigt.
+
+
+\subsection{Fehlerfall wenn mehrere Staaten den selben Mittelpunkt haben} 
+Dieses Beispiel führt auch zu einem Fehlerfall. Es ist unmöglich dass zwei Staate mit unterschiedliche Kennzeichen den selben Mittelpunkt haben. D und NL haben den selben Mittelpunkt in dieser Eingabedatei. Das wird überprüft und falls das der Fall ist, wird bei der Ausführung von der Batch Datei eine Fehlermeldung in der Konsole angezeigt.\\
+
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\includegraphics[width=10cm, height=8cm]{fehlerfall_gleiche_mittelpunkt}
+		\captionof{figure}{Fehlerhafte Eingabedatei}
+	\end{center}
+\end{minipage}\\\\
+
+\subsection{Sonderfall Staat kommt mehrmals vor} 
+Bei dem Einlesen von Eingabedatei muss aufgepasst werden dass der gleiche Staat nicht doppelt in der Liste gespeichert wird. Das Programm soll am Ende über die Liste aller Staaten iterieren und doppelte Einträge löschen. Nachdem die doppelten Einträge gelöscht sind, kann die Landkarte erstellt werden. Hierfür wurde als Eingabedatei die aus dem ersten Beispiel genutzt, nun kommt der Staat mit dem Autokennzeichen D, doppelt vor. Die Ausführung der Ausgabedatei, führt zu der gleiche Abbildung wie Beispiel 1.
 
 \chapter{Zusammenfassung und Ausblick}
+Das Programm könnte erweitert werden, um mit mehreren Testfälle umzugehen die hier nicht betrachtet sind. Die Skalierung für den Radius auf 0.2 wurde ausgewählt, weil es für die vorgegebenen Beispiele gut skaliert hat. Trotzdem wie im Beispiel 2 zu sehen war, musste ein anderer Wert ausgewählt werden, um auf den erwünschten Ergebnis zu kommen.\\ Daher kann man das Programm erweitern, an dem man eine Algorithmus überlegt um die Bestimmung des Skalierungsfaktors, damit der nicht mehr manuell gegeben werden muss. Die Werte um die Kräfte zu skalieren sind auch festgesetzt. Die können durch neue Werte ersetzt werden, die bei einer kleineren Anzahl von Iterationen vielleicht einen besseren Ergebnis darstellen können.\\
+Weitere Verbesserungen wären mehr Formate für In- und Output zu unterstützen oder andere In- und Output Typen.
+
+\chapter{Quellcode}
+\section{Staat}
+\lstinputlisting[caption=Staat.java,style=colored,language=JAVA]{Staat.java}
+\section{Einlesen}
+\lstinputlisting[caption=Einlesen.java,style=colored,language=JAVA]{Einlesen.java}
+\section{Ausgabe}
+\lstinputlisting[caption=Ausgabe.java,style=colored,language=JAVA]{Ausgabe.java}
+\section{Punkt}
+\lstinputlisting[caption=Punkt.java,style=colored,language=JAVA]{Punkt.java}
+\section{Algorithmus}
+\lstinputlisting[caption=Algorithmus.java,style=colored,language=JAVA]{Algorithmus.java}
+\section{Main}
+\lstinputlisting[caption=GrosseProgMain.java,style=colored,language=JAVA]{GrosseProgMain.java}
+
+

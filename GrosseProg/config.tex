@@ -17,4 +17,21 @@
 
 \usepackage{fancyref}
 \usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{lmodern}
 
+\lstdefinestyle{colored}{%
+	backgroundcolor=\color{yellow!10},%
+	basicstyle=\small\ttfamily,%
+	identifierstyle=\color{black},%
+	breaklines=true,
+	keywordstyle=\color{blue},%
+	keywordstyle={[2]\color{cyan!20!black}},%  kann benutzt werden,
+	% um spezielle Spracheigenschaften
+	% zu unterstützen
+	keywordstyle={[3]\color{green}},%
+	keywordstyle={[4]\color{green!50}},%
+	stringstyle=\color{teal},%
+	commentstyle=\itshape\color{orange},%
+}

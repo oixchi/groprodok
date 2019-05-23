@@ -1,5 +1,3 @@
-\babel@toc {english}{}
-\babel@toc {english}{}
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
@@ -9,48 +7,72 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Entwurf des Algorithmus}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Änderungen zum Ursprünglichen Konzept}{8}
+\contentsline {chapter}{\numberline {2}Änderungen zum ursprünglichen Konzept}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Klassen und Methoden}{9}
+\contentsline {chapter}{\numberline {3}Klassen und Methoden}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Klassendiagramm}{9}
+\contentsline {section}{\numberline {3.1}Klassendiagramm}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Klasse Main}{9}
+\contentsline {section}{\numberline {3.2}Sequenzdiagramm}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Klasse Einlesen}{9}
+\contentsline {section}{\numberline {3.3}Klasse Main}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Klasse Ausgabe}{10}
+\contentsline {section}{\numberline {3.4}Klasse Staat}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Algorithmus}{10}
+\contentsline {section}{\numberline {3.5}Klasse Einlesen}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Benutzeranleitung}{12}
+\contentsline {section}{\numberline {3.6}Klasse Punkt}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}ZIP Datei}{12}
+\contentsline {section}{\numberline {3.7}Klasse Algorithmus}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Programmaufruf}{12}
+\contentsline {section}{\numberline {3.8}Klasse Ausgabe}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{13}
+\contentsline {chapter}{\numberline {4}Benutzeranleitung}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Entwicklungsumgebung}{14}
+\contentsline {section}{\numberline {4.1}ZIP Datei}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Hardware}{14}
+\contentsline {section}{\numberline {4.2}Programmaufruf}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Software}{14}
+\contentsline {chapter}{\numberline {5}Entwicklungsumgebung}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Testfälle}{15}
+\contentsline {section}{\numberline {5.1}Hardware}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}IHK Beispiele}{15}
+\contentsline {section}{\numberline {5.2}Software}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}IHK Beispiel 1}{15}
+\contentsline {chapter}{\numberline {6}Testfälle}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}IHK Beispiel 2}{15}
+\contentsline {section}{\numberline {6.1}IHK Beispiel 1}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.3}IHK Beispiel 3}{15}
+\contentsline {section}{\numberline {6.2}IHK Beispiel 2}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Normalfälle}{15}
+\contentsline {section}{\numberline {6.3}IHK Beispiel 3}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Sonderfälle}{15}
+\contentsline {section}{\numberline {6.4}Andere Testfälle}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Fehlerfälle}{15}
+\contentsline {subsection}{\numberline {6.4.1}Normalfall mit fünf gleich grosse Staaten}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Quellcode}{16}
+\contentsline {subsection}{\numberline {6.4.2}Fehlerfall wenn für ein Autokennzeichen kein Staat gefunden werden kann}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.3}Fehlerfall mit negativem Kennwert}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.4}Fehlerfall wenn der selbe Staat mehrmals vorkommt mit unterschiedliche Mittelpunkten}{33}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.5}Fehlerfall wenn mehrere Staaten den selben Mittelpunkt haben}{33}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.6}Sonderfall Staat kommt mehrmals vor}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Zusammenfassung und Ausblick}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Quellcode}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Staat}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Einlesen}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Ausgabe}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Punkt}{48}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.5}Algorithmus}{50}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.6}Main}{58}

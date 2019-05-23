@@ -1,9 +1,9 @@
 [0] Config.pm:302> INFO - This is Biber 2.10
 [0] Config.pm:305> INFO - Logfile is 'grosseprog.blg'
-[36] biber-MSWIN32:313> INFO - === 
-[71] Biber.pm:371> INFO - Reading 'grosseprog.bcf'
-[179] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[191] Utils.pm:193> WARN - The file 'grosseprog.bcf' does not contain any citations!
-[200] bbl.pm:617> INFO - Writing 'grosseprog.bbl' with encoding 'UTF-8'
-[200] bbl.pm:720> INFO - Output to grosseprog.bbl
-[203] Biber.pm:110> INFO - WARNINGS: 1
+[49] biber-MSWIN32:313> INFO - === 
+[126] Biber.pm:371> INFO - Reading 'grosseprog.bcf'
+[245] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[256] Utils.pm:193> WARN - The file 'grosseprog.bcf' does not contain any citations!
+[265] bbl.pm:617> INFO - Writing 'grosseprog.bbl' with encoding 'UTF-8'
+[265] bbl.pm:720> INFO - Output to grosseprog.bbl
+[269] Biber.pm:110> INFO - WARNINGS: 1

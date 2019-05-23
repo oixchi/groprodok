@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/W32TeX)  (format=lualatex 2018.4.17)  15 MAY 2019 14:18
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/W32TeX)  (format=lualatex 2018.4.17)  17 MAY 2019 10:24
  restricted system commands enabled.
 **grosseprog.tex
 (./grosseprog.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.291 seconds
+luaotfload | main : initialization completed in 0.236 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrreprt.cls
 Document Class: scrreprt 2017/09/07 v3.24 KOMA-Script document class (report)
@@ -248,8 +248,11 @@ Package babel Info: Non-standard hyphenation setup on input line 113.
 \l@uppersorbian=\language83
 \l@welsh=\language84
 )
-(c:/texlive/2017/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+(c:/texlive/2017/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2016/11/02 v2.9 German support for babel (new orthography)
+
+(c:/texlive/2017/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2016/11/02 v2.9 German support for babel (new orthography)
 
 (c:/texlive/2017/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
@@ -257,15 +260,6 @@ File: babel.def 2018/02/14 3.18 Babel common definitions
 \U@D=\dimen103
 
 (c:/texlive/2017/texmf-dist/tex/generic/babel/luababel.def))
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
-)
-(c:/texlive/2017/texmf-dist/tex/generic/babel-german/ngerman.ldf
-Language: ngerman 2016/11/02 v2.9 German support for babel (new orthography)
-
-(c:/texlive/2017/texmf-dist/tex/generic/babel-german/ngermanb.ldf
-Language: ngermanb 2016/11/02 v2.9 German support for babel (new orthography)
 Package babel Info: Making " an active character on input line 125.
 
 (c:/texlive/2017/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-de-1996.tex
@@ -1000,6 +994,83 @@ Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
 \f@nch@O@erf=\skip82
 \f@nch@O@olf=\skip83
 \f@nch@O@orf=\skip84
+)
+(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count381
+\lst@gtempboxa=\box46
+\lst@token=\toks18
+\lst@length=\count382
+\lst@currlwidth=\dimen147
+\lst@column=\count383
+\lst@pos=\count384
+\lst@lostspace=\dimen148
+\lst@width=\dimen149
+\lst@newlines=\count385
+\lst@lineno=\count386
+\lst@maxwidth=\dimen150
+
+(c:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count387
+\lst@skipnumbers=\count388
+\lst@framebox=\box47
+)
+(c:/Users/ey290678/texmf/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(c:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/texlive/2017/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 ))
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
@@ -1012,18 +1083,12 @@ Package biblatex Info: ... file 'german.lbx' found.
 (c:/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 ))
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
-
-(c:/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
-)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 
-(./grosseprog.aux)
+(./grosseprog.aux (./eiderklaerung.aux))
 \openout1 = grosseprog.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -1043,17 +1108,17 @@ LaTeX Font Info:    ... okay on input line 4.
 
 (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count381
-\scratchdimen=\dimen147
-\scratchbox=\box46
-\nofMPsegments=\count382
-\nofMParguments=\count383
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count384
-\MPscratchDim=\dimen148
-\MPnumerator=\count385
-\makeMPintoPDFobject=\count386
-\everyMPtoPDFconversion=\toks19
+\scratchcounter=\count389
+\scratchdimen=\dimen151
+\scratchbox=\box48
+\nofMPsegments=\count390
+\nofMParguments=\count391
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count392
+\MPscratchDim=\dimen152
+\MPnumerator=\count393
+\makeMPintoPDFobject=\count394
+\everyMPtoPDFconversion=\toks20
 ) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1074,64 +1139,6 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
-.................................................
-. fontspec info: "setup-math"
-. 
-. Adjusting the maths setup (use [no-math] to avoid this).
-.................................................
-\symlegacymaths=\mathgroup4
-LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 4.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 4.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 4.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 4.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 4.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 4.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 4.
-LaTeX Font Info:    Redeclaring math accent \check on input line 4.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 4.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 4.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 4.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 4.
-LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 4.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 4.
-LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 4.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 4.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 4.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 4.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 4.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 4.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 4.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 4.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 4.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 4.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 4.
 Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
@@ -1145,55 +1152,60 @@ Package biblatex Info: ... file 'grosseprog.bbl' found.
 Package biblatex Info: Reference section=0 on input line 4.
 Package biblatex Info: Reference segment=0 on input line 4.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (./titel.tex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl
-/lmroman17-regular.luc) [1
+\c@lstlisting=\count395
+ (./titel.tex
+<itc-logo.png, id=1, 250.68657pt x 60.97781pt>
+File: itc-logo.png Graphic file (type png)
+<use itc-logo.png>
+Package luatex.def Info: itc-logo.png  used on input line 3.
+(luatex.def)             Requested size: 217.27562pt x 52.853pt.
+
+Overfull \hbox (13.0pt too wide) in paragraph at lines 3--5
+[][]
+ []
+
+(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-re
+gular.luc) [1
 
 
-{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./itc-logo.png>]
+)
 \openout2 = eiderklaerung.aux
- (./eiderklaeru
-ng.tex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmsans
-12-regular.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/o
-tl/lmsans10-bold.luc)
+ (./eiderklaerung.tex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/
+fonts/otl/lmsans12-regular.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache
+/generic/fonts/otl/lmsans10-bold.luc)
 Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 16.
-(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-reg
-ular.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmr
-oman7-regular.luc)
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 16.
+(c:/texlive/2017/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 16.
 
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 16.
+(c:/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 16.
 
+(c:/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 16.
 
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 16.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 16.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 16.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
+(c:/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <13> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9.09996> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6.5> on input line 16.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 16.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 16.
-
 
 Overfull \hbox (15.60513pt too wide) in paragraph at lines 16--21
 [][] 
@@ -1209,70 +1221,489 @@ Overfull \hbox (15.60513pt too wide) in paragraph at lines 16--21
 \tf@toc=\write5
 
 \openout5 = grosseprog.toc
- (./inhalt_2.tex [4]
+ (./inhalt.tex [4]
 chapter 1.
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface .
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
 [5
 
 ] [6] [7]
 chapter 2.
 [8
 
-]
+] [9]
 chapter 3.
-[9
+<klassendiagramm.png, id=36, 1274.7625pt x 843.15pt>
+File: klassendiagramm.png Graphic file (type png)
+<use klassendiagramm.png>
+Package luatex.def Info: klassendiagramm.png  used on input line 54.
+(luatex.def)             Requested size: 434.55125pt x 287.41339pt.
 
-] [10] [11]
-chapter 4.
+Package caption Warning: \captionsetup{type*=...} or \captionof
+(caption)                outside box or environment on input line 55.
+See the caption package documentation for explanation.
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--72
+[10
+
+<./klassendiagramm.png>]
+<sequence.png, id=40, 893.3375pt x 782.925pt>
+File: sequence.png Graphic file (type png)
+<use sequence.png>
+Package luatex.def Info: sequence.png  used on input line 59.
+(luatex.def)             Requested size: 434.55125pt x 380.84114pt.
+ [11<./sequence.png>] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-[12
+[13]
+<struktogram_berechne_kraefte.png, id=51, 1228.59pt x 945.5325pt>
+File: struktogram_berechne_kraefte.png Graphic file (type png)
+<use struktogram_berechne_kraefte.png>
+Package luatex.def Info: struktogram_berechne_kraefte.png  used on input line 10
+2.
+(luatex.def)             Requested size: 434.54965pt x 426.79861pt.
+
+Overfull \hbox (32.5pt too wide) in paragraph at lines 101--105
+[]$[]$ 
+ []
+
+[14<./struktogram_berechne_kraefte.png>]
+<struktogram_wende_kraft.png, id=56, 670.505pt x 595.22375pt>
+File: struktogram_wende_kraft.png Graphic file (type png)
+<use struktogram_wende_kraft.png>
+Package luatex.def Info: struktogram_wende_kraft.png  used on input line 113.
+(luatex.def)             Requested size: 426.78906pt x 369.87958pt.
+
+Overfull \hbox (32.5pt too wide) in paragraph at lines 111--117
+[]$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--117
+
+ []
+
+<struktogram_wende_kraft_iter.png, id=57, 256.96pt x 169.63374pt>
+File: struktogram_wende_kraft_iter.png Graphic file (type png)
+<use struktogram_wende_kraft_iter.png>
+Package luatex.def Info: struktogram_wende_kraft_iter.png  used on input line 12
+0.
+(luatex.def)             Requested size: 142.26552pt x 85.35762pt.
+
+Overfull \hbox (32.5pt too wide) in paragraph at lines 118--124
+[]$[]$ 
+ []
+
+[15<./struktogram_wende_kraft.png>]
+<struktogram_set_xrange.png, id=62, 675.52374pt x 569.12625pt>
+File: struktogram_set_xrange.png Graphic file (type png)
+<use struktogram_set_xrange.png>
+Package luatex.def Info: struktogram_set_xrange.png  used on input line 130.
+(luatex.def)             Requested size: 455.25793pt x 369.90163pt.
+
+Overfull \hbox (20.70668pt too wide) in paragraph at lines 130--131
+ [] 
+ []
+
+
+Overfull \hbox (32.5pt too wide) in paragraph at lines 128--134
+[]$[]$ 
+ []
+
+[16<./struktogram_wende_kraft_iter.png>]
+<struktogram_set_yrange.png, id=67, 794.97pt x 569.12625pt>
+File: struktogram_set_yrange.png Graphic file (type png)
+<use struktogram_set_yrange.png>
+Package luatex.def Info: struktogram_set_yrange.png  used on input line 137.
+(luatex.def)             Requested size: 455.2604pt x 369.90163pt.
+
+Overfull \hbox (20.70915pt too wide) in paragraph at lines 137--138
+ [] 
+ []
+
+
+Overfull \hbox (32.5pt too wide) in paragraph at lines 135--141
+[]$[]$ 
+ []
+
+[17<./struktogram_set_xrange.png>]
+<struktogram_setrange.png, id=72, 862.22125pt x 436.63126pt>
+File: struktogram_setrange.png Graphic file (type png)
+<use struktogram_setrange.png>
+Package luatex.def Info: struktogram_setrange.png  used on input line 146.
+(luatex.def)             Requested size: 341.42226pt x 227.62253pt.
+
+Overfull \hbox (32.5pt too wide) in paragraph at lines 144--150
+[]$[]$ 
+ []
+
+[18<./struktogram_set_yrange.png>] [19<./struktogram_setrange.png>]
+chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+[20
 
 ]
 chapter 5.
-[13
+[21
 
 ]
 chapter 6.
-[14
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+<eingabedatei_ihk_beispiel_1.png, id=88, 284.86424pt x 230.66174pt>
+File: eingabedatei_ihk_beispiel_1.png Graphic file (type png)
+<use eingabedatei_ihk_beispiel_1.png>
+Package luatex.def Info: eingabedatei_ihk_beispiel_1.png  used on input line 193
+.
+(luatex.def)             Requested size: 227.62221pt x 227.62373pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--198
+
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 191--198
+\TU/lmr/m/n/13 Im IHK Bei-spiel 1 lie-gen zehn Staa-ten auf en-ger Flä-che und
+ es gibt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--198
+
+ []
+
+[22
+
+<./eingabedatei_ihk_beispiel_1.png>]
+<ihk_beispiel_1_100_iterationen.png, id=93, 567.3195pt x 557.6835pt>
+File: ihk_beispiel_1_100_iterationen.png Graphic file (type png)
+<use ihk_beispiel_1_100_iterationen.png>
+Package luatex.def Info: ihk_beispiel_1_100_iterationen.png  used on input line 
+201.
+(luatex.def)             Requested size: 284.5247pt x 284.53395pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--205
+
+ []
+
+<bsp1_ohneskalierung.png, id=94, 474.573pt x 454.69875pt>
+File: bsp1_ohneskalierung.png Graphic file (type png)
+<use bsp1_ohneskalierung.png>
+Package luatex.def Info: bsp1_ohneskalierung.png  used on input line 208.
+(luatex.def)             Requested size: 284.52875pt x 284.53291pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--212
+
+ []
+
+[23<./ihk_beispiel_1_100_iterationen.png>]
+<ausgabedatei_ihk_beispiel1.png, id=99, 416.15475pt x 256.5585pt>
+File: ausgabedatei_ihk_beispiel1.png Graphic file (type png)
+<use ausgabedatei_ihk_beispiel1.png>
+Package luatex.def Info: ausgabedatei_ihk_beispiel1.png  used on input line 215.
+
+(luatex.def)             Requested size: 284.54358pt x 227.63168pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+[24<./bsp1_ohneskalierung.png><./ausgabedatei_ihk_beispiel1.png>]
+<eingabedatei_ihk_beispiel_2.png, id=105, 333.6465pt x 238.491pt>
+File: eingabedatei_ihk_beispiel_2.png Graphic file (type png)
+<use eingabedatei_ihk_beispiel_2.png>
+Package luatex.def Info: eingabedatei_ihk_beispiel_2.png  used on input line 227
+.
+(luatex.def)             Requested size: 227.62498pt x 227.62776pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--231
+
+ []
+
+<ihkbeispiel2_falsch.png, id=106, 476.37975pt x 464.937pt>
+File: ihkbeispiel2_falsch.png Graphic file (type png)
+<use ihkbeispiel2_falsch.png>
+Package luatex.def Info: ihkbeispiel2_falsch.png  used on input line 234.
+(luatex.def)             Requested size: 227.62021pt x 227.62247pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--238
+
+ []
+
+[25<./eingabedatei_ihk_beispiel_2.png>]
+<bsp2_richtig.png, id=111, 478.78876pt x 461.3235pt>
+File: bsp2_richtig.png Graphic file (type png)
+<use bsp2_richtig.png>
+Package luatex.def Info: bsp2_richtig.png  used on input line 241.
+(luatex.def)             Requested size: 227.62427pt x 227.62024pt.
+ [26<./ihkbeispiel2_falsch.png><./bsp2_richtig.png>]
+<eingabedatei_ihk_beispiel_3.png, id=117, 251.13824pt x 533.5935pt>
+File: eingabedatei_ihk_beispiel_3.png Graphic file (type png)
+<use eingabedatei_ihk_beispiel_3.png>
+Package luatex.def Info: eingabedatei_ihk_beispiel_3.png  used on input line 252
+.
+(luatex.def)             Requested size: 227.63179pt x 512.17065pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--256
+
+ []
+
+[27<./eingabedatei_ihk_beispiel_3.png>]
+<ihk_beispiel_3_2000_iterationen.png, id=122, 567.3195pt x 586.5915pt>
+File: ihk_beispiel_3_2000_iterationen.png Graphic file (type png)
+<use ihk_beispiel_3_2000_iterationen.png>
+Package luatex.def Info: ihk_beispiel_3_2000_iterationen.png  used on input line
+ 259.
+(luatex.def)             Requested size: 284.5247pt x 284.53233pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--263
+
+ []
+
+<ausgabedatei_ihk_beispiel3.png, id=123, 434.8245pt x 411.939pt>
+File: ausgabedatei_ihk_beispiel3.png Graphic file (type png)
+<use ausgabedatei_ihk_beispiel3.png>
+Package luatex.def Info: ausgabedatei_ihk_beispiel3.png  used on input line 266.
+
+(luatex.def)             Requested size: 398.34483pt x 398.33577pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--270
+
+ []
+
+[28<./ihk_beispiel_3_2000_iterationen.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+<eingabe_normalfall3.png, id=128, 267.399pt x 141.52875pt>
+File: eingabe_normalfall3.png Graphic file (type png)
+<use eingabe_normalfall3.png>
+Package luatex.def Info: eingabe_normalfall3.png  used on input line 278.
+(luatex.def)             Requested size: 227.62479pt x 113.81487pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--282
+
+ []
+
+[29<./ausgabedatei_ihk_beispiel3.png>]
+<gleichgrosse.png, id=133, 983.47424pt x 471.56175pt>
+File: gleichgrosse.png Graphic file (type png)
+<use gleichgrosse.png>
+Package luatex.def Info: gleichgrosse.png  used on input line 285.
+(luatex.def)             Requested size: 398.3349pt x 199.16988pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--289
+
+ []
+
+<ausgabe_normalfall3.png, id=134, 417.35925pt x 193.9245pt>
+File: ausgabe_normalfall3.png Graphic file (type png)
+<use ausgabe_normalfall3.png>
+Package luatex.def Info: ausgabe_normalfall3.png  used on input line 292.
+(luatex.def)             Requested size: 398.34859pt x 199.1704pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--296
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--296
+
+ []
+
+[30<./eingabe_normalfall3.png><./gleichgrosse.png>]
+<bsp_nachbar_kein_staat.png, id=140, 258.9675pt x 262.581pt>
+File: bsp_nachbar_kein_staat.png Graphic file (type png)
+<use bsp_nachbar_kein_staat.png>
+Package luatex.def Info: bsp_nachbar_kein_staat.png  used on input line 304.
+(luatex.def)             Requested size: 256.10199pt x 227.62224pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--308
+
+ []
+
+[31<./ausgabe_normalfall3.png>]
+<bsp_flaeche_neg.png, id=146, 296.307pt x 243.91125pt>
+File: bsp_flaeche_neg.png Graphic file (type png)
+<use bsp_flaeche_neg.png>
+Package luatex.def Info: bsp_flaeche_neg.png  used on input line 316.
+(luatex.def)             Requested size: 284.55095pt x 227.62413pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--320
+
+ []
+
+[32<./bsp_nachbar_kein_staat.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
+
+ []
+
+[33<./bsp_flaeche_neg.png>]
+<fehlerfall_gleiche_mittelpunkt.png, id=155, 258.9675pt x 248.72925pt>
+File: fehlerfall_gleiche_mittelpunkt.png Graphic file (type png)
+<use fehlerfall_gleiche_mittelpunkt.png>
+Package luatex.def Info: fehlerfall_gleiche_mittelpunkt.png  used on input line 
+334.
+(luatex.def)             Requested size: 284.55688pt x 227.63057pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--338
+
+ []
+
+[34<./fehlerfall_gleiche_mittelpunkt.png>]
 chapter 7.
-[15
+[35
 
 ]
 chapter 8.
-) [16
+(c:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmmono12-re
+gular.luc)
+(./Staat.java(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl
+/lmroman7-regular.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/
+fonts/otl/lmmono10-italic.luc) [36
 
-] (./grosseprog.aux (./eiderklaerung.aux))
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.0pt have occurred.
-
+] [37] [38] [39]) (./Einlesen.java [40]
+[41] [42] [43] [44]) (./Ausgabe.java [45] [46] [47]) (./Punkt.java [48])
+[49] (./Algorithmus.java [50] [51] [52] [53] [54] [55] [56]) [57]
+(./GrosseProgMain.java)) [58] (./grosseprog.aux (./eiderklaerung.aux))
 Package logreq Info: Writing requests to 'grosseprog.run.xml'.
 
 \openout1 = grosseprog.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 22891 strings out of 494480
- 100000,1144653 words of node,token memory allocated
- 500 words of node memory still in use:
-   4 hlist, 1 vlist, 1 rule, 5 glue, 5 attribute, 65 glue_spec, 5 attribute_list
+ 25401 strings out of 494480
+ 305228,1144653 words of node,token memory allocated
+ 505 words of node memory still in use:
+   4 hlist, 1 vlist, 1 rule, 5 glue, 5 attribute, 66 glue_spec, 5 attribute_list
 , 1 write nodes
-   avail lists: 1:3,2:441,3:125,4:30,5:158,6:2132,7:664,8:11,9:145,10:22,11:285
- 26486 multiletter control sequences out of 65536+600000
- 54 fonts using 7035063 bytes
- 49i,11n,66p,8834b,1878s stack positions out of 5000i,500n,10000p,200000b,100000s
-<c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texli
-ve/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/20
-17/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on grosseprog.pdf (16 pages, 39220 bytes).
+   avail lists: 1:6,2:4536,3:133,4:4637,5:4761,6:2391,7:11007,8:3698,9:7931,10:3
+1,11:498
+ 28729 multiletter control sequences out of 65536+600000
+ 46 fonts using 6722827 bytes
+ 49i,12n,66p,8834b,1793s stack positions out of 5000i,500n,10000p,200000b,100000s
+<c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf><c:/tex
+live/2017/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf><c:/texlive/2
+017/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf>{c:/texlive/2017/te
+xmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2017/texmf-dist/fonts/enc/
+dvips/lm/lm-mathex.enc}<c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmsa
+ns10-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-reg
+ular.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.
+otf><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/201
+7/texmf-dist/fonts/type1/public/lm/lmmi12.pfb>
+Output written on grosseprog.pdf (58 pages, 869645 bytes).
 
-PDF statistics: 76 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+PDF statistics: 285 PDF objects out of 1000 (max. 8388607)
+ 156 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
